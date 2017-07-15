@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	{% include head.html %}
+
+	<body>
+		{% include header.html %}
+		<div class="container site-width">
+			<div class="row item-detail-proinfo">
+				<div class="col-md-4 thumbnail right-angle">
+					<img class="media-object" src="{{ page.pro_img }}" alt="{{ page.title }}">
+				</div>
+				<div class="col-md-8">
+					<h4 class="media-heading color-brand"><strong>{{ page.title }}</strong></h4>
+					<h5><strong class="color-brand">&yen;{{ page.pro_preprice }}</strong>&nbsp;[<s>&yen;{{ page.pro_curprice }}</s>]&nbsp;
+			      	<span class="tag tag-coupon"><span class="icon"></span>
+			      		<span class="money"><span>{{ page.pro_ticketprice }}</span>元</span>
+			      	</span>
+			      </h5>
+					<h6>使用期限 {{ page.pro_effective }}</h6>
+					<!--<p>1. 点击“立即领取”按钮，领取成功后购买商品时使用，即可享受优惠。</p>-->
+					<!--<p>2. 在手机淘宝-我的淘宝-卡券包-网店优惠券，可查询已发放到账户的优惠券。</p>-->
+					<!--<p>3. 因商品参与其它活动等原因，付款时优惠券可能无法使用，此时商品最终成交价以您实际付款时提示金额为准。</p>-->
+					<!--<p>4. 获取、使用优惠券时如存在违规行为（作弊领取、恶意套现、刷取信誉、虚假交易等），将取消用户领取资格、撤销违规交易且收回全部优惠券（含已使用及未使用的），必要时追究法律责任。</p>-->
+					<a class="btn btn-default" href="{{ page.pro_url }}" role="button">领券购买</a>
+				</div>
+			</div>
+
+			<div class="panel panel-default right-angle">
+				<div class="panel-heading">商品详细</div>
+				<div class="panel-body item-detail-content">
+					{{ content }}
+				</div>
+			</div>
+
+			{% include list_hot.html %}
+
+		</div>
+
+		<!--<nav class="navbar navbar-default navbar-fixed-bottom">
+		  <div class="container">
+		    ...
+		  </div>
+		</nav>-->
+
+		{% include footer.html %}
+
+	</body>
+
+</html>

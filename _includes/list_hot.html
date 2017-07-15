@@ -1,0 +1,10 @@
+<div class="panel panel-default right-angle">
+  <div class="panel-heading">热门推荐</div>
+  <div class="panel-body">
+    <div class="row">
+    	{% for post in site.categories.hot limit:8 %}
+				{% include list_item_info.html %}
+			{% endfor %}
+    </div>
+  </div>
+</div>

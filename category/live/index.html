@@ -1,0 +1,9 @@
+---
+layout: default
+---
+
+<div class="row">
+{% for post in site.categories.live %}
+	{% include list_item_info.html %}
+{% endfor %}
+</div>

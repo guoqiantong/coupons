@@ -1,0 +1,133 @@
+body {
+	background-color: #f1f1f1;
+}
+
+.container {
+	background-color: #FFFFFF;
+}
+
+.navbar-nav>li>a {
+	text-align: center;
+}
+
+.navbar-top>li>a {
+	color: #f50 !important;
+}
+
+.navbar-default {
+	background-color: #FFFFFF;
+}
+
+.site-width {
+	max-width: 1200px;
+}
+
+.item-list {
+	padding-top: 15px;
+}
+
+.btn-default {
+	border: solid 1px #f50;
+	color: #f50;
+}
+
+.product_item:hover {
+	border: 1px solid #f50;
+}
+
+.product_item:hover .btn-buy {
+	border: 1px solid #f50;
+	background-color: #f50;
+	color: #fff;
+}
+
+.product_item .btn-buy {
+	border-left: none;
+}
+
+.item-list-title {
+	line-height: 20px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+}
+
+.item-detail-proinfo {
+	padding-top: 15px;
+	margin-left: 0px;
+	margin-right: 0px;
+	/*margin-bottom: 20px;*/
+	/*background-color: #f8f8f8;*/
+}
+
+.item-detail-content {
+	text-align: center;
+}
+
+.item-detail-content img {
+	max-width: 100%;
+}
+
+.right-angle {
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+}
+
+.btn {
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+}
+
+.panel {}
+
+.color-brand {
+	color: #f50;
+}
+
+.tag-coupon {
+	width: auto
+}
+
+.tag-coupon .icon {
+	width: 17px;
+	height: 16px;
+	display: inline-block;
+	vertical-align: top;
+	background-image: url(/static/imgs/icon_quan.png);
+}
+
+.tag-coupon .money {
+	border: 1px solid #f50;
+	border-left: none;
+	display: inline-block;
+	vertical-align: top;
+	height: 14px;
+	line-height: 14px;
+	background-color: #FFF;
+	border-radius: 0 2px 2px 0;
+	padding: 0 3px;
+	color: #E64D00
+}
+
+.footer {
+	border-top: solid 2px #f50;
+	text-align: center;
+	color: #999999;
+}
+
+.navbar-default .navbar-toggle {
+	border: none;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #f50;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+	background-color: #FFFFFF;
+}
